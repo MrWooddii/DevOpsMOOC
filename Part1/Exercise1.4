@@ -1,6 +1,6 @@
 docker run -it ubuntu sh -c "while true; do echo 'Input website:'; read website; echo 'Searching...'; sleep 1; curl http://$website; done"
 
 docker ps (to find the container id -> 7b3...)
-docker exec -it 7b3
+docker exec -it 7b3 bash
 apt-get update
 apt install curl
